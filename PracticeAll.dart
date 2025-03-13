@@ -130,7 +130,7 @@ void main() {
 */
 
 // -------------Recursion Function---------
-
+/*
 int factorial(int n) {
   if (n == 0) return 1;
   return n * factorial(n - 1);
@@ -139,3 +139,94 @@ int factorial(int n) {
 void main() {
   print(factorial(5)); 
 }
+*/
+
+// -------------------date: 13-03-2025-----------------
+// -------------------Dart OOP----------------------
+
+// constructor
+/*
+class Student {   // Default constructor
+  late String name;
+  late int age;
+
+  void display(){
+    print('name: $name and $age');
+  }
+}
+
+void main(){
+  Student student1 = Student();
+  student1.name = 'Sajib';
+  student1.age = 23;
+  student1.display();
+}
+*/
+
+/*
+class Student {   // Parameterized Constructor
+  late String name;
+  late int age;
+
+  Student(String name, int age) {
+    this.name = name;  //We use the this keyword when the constructor parameter name is the same as the instance variable name.
+    this.age = age;
+  }
+
+  void display() {
+    print('Name: $name, Age: $age');
+  }
+}
+
+void main() {
+  
+  Student student1 = Student('Sajib', 23);
+  student1.display();
+
+  Student student2 = Student('Anik', 25);
+  student2.display();
+}
+*/
+/*   
+class Person {       // Named Constructor with fixed value or without parameters
+  String name;
+  int age;
+
+  Person(this.name, this.age);  // Normal constructor
+
+  Person.guest()  // Named constructor
+      : name = 'Guest',
+        age = 0;
+}
+
+void main() {
+  
+  Person p1 = Person('Alice', 25); // Normal constructor diye object create
+  print('Normal Constructor -> Name: ${p1.name}, Age: ${p1.age}');
+
+  Person guestPerson = Person.guest();  // Named constructor diye object create
+  print('Named Constructor -> Name: ${guestPerson.name}, Age: ${guestPerson.age}');
+}
+*/
+
+/*
+class Person {  // Named constructor with parameters
+  String name;
+  int age;
+
+  Person(this.name, this.age);  // Normal constructor
+
+  Person.guest(String guestName, int guestAge) // Named constructor with parameters
+      : name = guestName, //The : symbol in the constructor is used to initialize instance variables before the constructor body runs.
+        age = guestAge;
+}
+
+void main() {
+  Person p1 = Person('Alice', 25); 
+  print('Normal Constructor -> Name: ${p1.name}, Age: ${p1.age}');
+  
+  Person guestPerson = Person.guest('Bob', 30); // Named constructor with parameters
+  print('Named Constructor -> Name: ${guestPerson.name}, Age: ${guestPerson.age}');
+}
+*/
+
