@@ -230,3 +230,30 @@ void main() {
 }
 */
 
+class Animal {
+  void makeSound() {
+    print("Animal makes a sound");
+  }
+}
+
+class Dog extends Animal {
+  @override
+  void makeSound() {
+    print("Dog barks");
+  }
+}
+
+class Cat extends Animal {
+  @override
+  void makeSound() {
+    print("Cat meows");
+  }
+}
+
+void main() {
+  Animal animal1 = Dog(); // Parent class reference but Dog object
+  Animal animal2 = Cat(); // Parent class reference but Cat object
+
+  animal1.makeSound(); // Output: Dog barks
+  animal2.makeSound(); // Output: Cat meows
+}
