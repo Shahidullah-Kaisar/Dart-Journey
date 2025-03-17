@@ -1,0 +1,33 @@
+
+✅ Dart-এ Inheritance করার উপায়
+
+1. extends Keyword
+এক ক্লাস অন্য ক্লাসের সম্পূর্ণ বৈশিষ্ট্য এবং Method Inherit করার জন্য ব্যবহৃত হয়।
+Code reuse হয়।
+Parent ক্লাসের Method গুলো Override করা যায় অথবা নতুন Method যোগ করা যায়।
+শুধুমাত্র Single Inheritance হয়।
+
+2. implements Keyword
+Interface implement করার জন্য ব্যবহৃত হয়।
+Parent Class-এর Method গুলোর Signature মাত্র পাওয়া যায়, Body পাওয়া যায় না।
+Child Class-কে সব Method compulsorily override করতে হয়।
+Multiple interfaces implement করা যায়।
+
+3. with Keyword (Mixins)
+Multiple Class থেকে Method বা Behavior নেওয়ার জন্য ব্যবহৃত হয়।
+Code reuse করার জন্য সুবিধাজনক।
+Mixins-এ Constructor থাকে না।
+একাধিক Mixins ব্যবহার করে Multiple Inheritance এর মতো সুবিধা পাওয়া যায়।
+
+✅ @override Annotation
+Dart-এ @override Annotation ব্যবহার করা হয় Method override করার সময়।
+এটি Compiler-কে বোঝায় যে Method বা Property Parent Class অথবা Interface থেকে Inherit করা হয়েছে এবং নতুনভাবে পরিবর্তিত করা হচ্ছে।
+এটি কোডের রিডেবিলিটি বাড়ায় এবং Compiler-এর মাধ্যমে যাচাই করতে সাহায্য করে Method Signature ঠিক আছে কিনা।
+implements ব্যবহার করলে সব Method override করতে হয়, তাই @override ব্যবহার করা হয়।
+
+✅ Important Notes:
+Dart শুধুমাত্র Single Inheritance সমর্থন করে।
+Multiple Inheritance করতে চাইলে implements বা Mixins (with) ব্যবহার করতে হয়।
+Constructor extends দিয়ে Inherit হয়, কিন্তু implements দিয়ে হয় না।
+@override Best Practice হলেও বাধ্যতামূলক নয়, তবে implements করলে Override করা বাধ্যতামূলক হয়।
+mixins Constructor Support করে না এবং Lightweight Code Reuse-এর জন্য ব্যবহৃত হয়।

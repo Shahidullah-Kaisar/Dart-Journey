@@ -1,0 +1,98 @@
+
+1. What is Inheritance?
+Inheritance is like a parent-child relationship in programming. Imagine you have a parent class (also called a base class or superclass) and a child class (also called a derived class or subclass). The child class inherits all the properties and methods of the parent class, and it can also have its own unique properties and methods.
+--------------
+2. Why Use Inheritance?
+Reusability: You don’t have to rewrite the same code. The child class can reuse the code from the parent class.
+
+Organization: It helps in organizing code in a hierarchical manner.
+
+Extensibility: You can add new features to the child class without modifying the parent class.
+-------------
+3. Key Terms
+Parent Class (Superclass): The class whose properties and methods are inherited.
+
+Child Class (Subclass): The class that inherits from the parent class.
+
+Inheritance: The process of creating a new class from an existing class.
+
+extends Keyword: Used to create a child class that inherits from a parent class.
+
+super Keyword: Used to call the constructor or methods of the parent class.
+
+
+Single inheritance: is a type of inheritance in Object-Oriented Programming (OOP) where one class (child/derived class)
+inherits from exactly one parent (base) class.
+
+
+
+Types of Inheritance in Object-Oriented Programming (OOP)
+Inheritance allows a class to inherit properties and behaviors (methods) from another class. It promotes code reusability, hierarchical classification, and extensibility.
+
+1. Single Inheritance:
+
+In Single Inheritance, one subclass inherits from one superclass.
+It forms a simple parent-child relationship.
+The child class gets access to the properties and methods of the parent class.
+It’s the most basic form of inheritance.
+
+---------------------------------
+
+2. Multilevel Inheritance:
+
+In Multilevel Inheritance, a class is derived from another class, which is also derived from another class.
+This creates a chain of inheritance (Grandparent → Parent → Child).
+The last derived class inherits features from both its immediate parent and all ancestors.
+
+Base Class (Grandparent)
+        ↑
+Derived Class (Parent)
+        ↑
+Derived Class (Child)
+
+--------------------------------
+
+3. Hierarchical Inheritance:
+
+In Hierarchical Inheritance, multiple subclasses inherit from a single parent class.
+The common functionality is defined in the parent, and each child class can have its own specific features.
+Useful when multiple entities share common behavior.
+
+
+4. Multiple Inheritance:
+
+In Multiple Inheritance, a single class inherits from more than one parent class.
+It allows combining features from multiple classes.
+Dart doesn’t support true multiple inheritance with classes, but it can be achieved using Mixins or Interfaces.
+Some languages (like C++) allow multiple inheritance directly, but others (like Java, Dart) handle it differently due to complexity and the Diamond Problem.
+
+---------------------------------
+
+5. Hybrid Inheritance
+Hybrid Inheritance is a combination of two or more types of inheritance (e.g., single + multiple + hierarchical).
+It can lead to complex structures and may cause ambiguity (like the Diamond Problem).
+Some languages avoid direct hybrid inheritance and instead offer solutions like interfaces and mixins.
+
+----------------------------
+
+✅ How Dart Handles Inheritance:
+
+Dart does not support multiple inheritance with classes directly.
+Dart uses:
+Single, Multilevel, and Hierarchical Inheritance through classes and the extends keyword.
+Multiple Inheritance-like behavior using Mixins (with keyword) and Interfaces (implements keyword).
+
+------------------------------
+
+✅ Summary Table:
+
+Type	Description
+Single Inheritance:	One class inherits from another class.
+Multilevel Inheritance:	A chain of inheritance through multiple levels.
+Hierarchical Inheritance:	Multiple classes inherit from a single parent class.
+Multiple Inheritance:	A class inherits from more than one parent class (supported via mixins/interfaces in Dart).
+Hybrid Inheritance:	Combination of multiple types of inheritance.
+
+
+
+
