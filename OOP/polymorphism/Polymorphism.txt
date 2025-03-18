@@ -1,0 +1,20 @@
+What is Polymorphism?
+
+Polymorphism means "many forms".
+In programming, polymorphism allows objects to take many forms.
+It lets us call the same method on different types of objects, and each object responds differently.
+
+✅ Why use polymorphism?
+
+Makes code flexible and reusable.
+Encourages code generalization (working with interfaces or base classes).
+Simplifies code management and reduces duplication.
+
+✅ Step 1: Understanding the Basics of Polymorphism
+There are two main types of polymorphism:
+
+Compile-time polymorphism (Method Overloading)
+⚠️ Dart does NOT support method overloading.
+
+Run-time polymorphism (Method Overriding)
+✅ Dart supports this!
